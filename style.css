@@ -1,0 +1,179 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(imgs/bodyBg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(239, 176, 59);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 5%;
+    height: 80px;
+    z-index: 1000;
+    padding: 0 10px;
+}
+
+.download, .about, .footer {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(239, 176, 59);
+    font-size: 1.6rem;
+    min-width: 160px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-radius: 35px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    transition: 0.3s;
+}
+
+.download:hover, .about:hover, .footer:hover {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.dwnl, .abt {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-color: rgb(243, 210, 148);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 200px;
+    padding: 2em;
+    border-radius: 35px;
+}
+
+.h1 {
+    color: rgb(239, 176, 59);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.dwnl p {
+    color: rgb(239, 176, 59);
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.btnDownload {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(239, 176, 59);
+    font-size: 2.5rem;
+    margin-top: 20px;
+    padding: 15px;
+    min-width: 200px;
+    text-decoration: none;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 35px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    transition: 0.3s;
+}
+
+.btnDownload:hover {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 3rem;
+}
+
+.ftr {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    margin-top: 10%;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(131, 110, 71);
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    height: auto;
+    padding: 2em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ds, .tg {
+    color: antiquewhite;
+    font-size: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        gap: 10%;
+        height: 70px;
+    }
+    
+    .download, .about, .footer {
+        font-size: 1.4rem;
+    }
+    
+    .h1 {
+        font-size: 2rem;
+    }
+    
+    .dwnl p, .btnDownload {
+        font-size: 1.6rem;
+    }
+    
+    .ftr {
+        padding: 1.5em;
+    }
+    
+    .ds, .tg {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        gap: 5%;
+        height: 60px;
+    }
+
+    .download, .about, .footer {
+        font-size: 1.2rem;
+        min-width: 120px;
+    }
+    
+    .h1 {
+        font-size: 1.6rem;
+    }
+    
+    .dwnl p, .btnDownload {
+        font-size: 1.4rem;
+    }
+    
+    .ftr {
+        padding: 1em;
+    }
+    
+    .ds, .tg {
+        font-size: 1.5rem;
+    }
+}
